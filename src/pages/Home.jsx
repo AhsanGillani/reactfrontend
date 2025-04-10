@@ -11,7 +11,8 @@ const Home = () => {
     }
 
 useEffect(() => {
-axios.get("http://localhost:3000/api/products/getall")
+    // http://localhost:3000/api/products/getall
+axios.get("https://expressbackend-eight-topaz.vercel.app/api/products/getall")
 .then((response)=>{
     // setMessage(JSON.stringify(response.data, null, 2)); // Pretty print JSON
     setMessage(response.data.message)
